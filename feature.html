@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+     <div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Bangkit Nation</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <div class="navbar-nav py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <!-- Your dropdown menu content here -->
+                    <div class="dropdown-menu m-0">
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item active">Topic Repository</a>
+                        <a href="feature.html" class="dropdown-item">Topic Description</a>
+                        <a href="team.html" class="dropdown-item">Figure</a>
+                        <a href="testimonial.html" class="dropdown-item">HTTRACK</a>
+                        <a href="quote.html" class="dropdown-item">Conifer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Description on Sub Topic</h1>
+                <a href="" class="h5 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h5 text-white">Description on Sub Topic</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Features Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Description Repository</h5>
+            <h1 class="mb-0">Table of Description of Kebangkitan Nasionalisme</h1>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-3">
+            <input type="text" id="searchInput" placeholder="Search by Topic_ID" oninput="searchTable()" class="form-control">
+        </div>
+
+        <table class="table table-bordered" id="topicTable">
+            <thead>
+                <tr>
+                    <th class="text-center">Topic ID</th>
+					 <th class="text-center">Title</th>
+                    <th class="text-center">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1001</h4>
+                    </td>
+					<td class="text-center">Maksud Nasionalisme</td>
+                    <td>
+                        <p>This section explores the essence of nationalism, characterized by a deep love for 
+						one's nation and a collective movement to free the homeland from external influences. 
+						Hans Kohn defines nationalism as an individual's devoted allegiance. 
+						Professor William R. Roff discusses its pre-World War II awareness, citing economic factors 
+						and Western influences. Dato' Onn Jaafar emphasizes the need to cultivate resilient and
+						self-reliant societies. Professor Datuk Zainal Abidin Abdul Wahid traces the historical
+						roots of nationalism to the Sultanate of Malacca, underscoring Malay beliefs in 
+						"Tanah Melayuan" and the ongoing struggle for societal recognition</p>
+                    </td>
+                </tr>
+				<!-- Row 2 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1002</h4>
+                    </td>
+					<td class="text-center">Perkembangan idea Nasionalisme Di Asia</td>
+                    <td>
+                        <p>Nationalism in Southeast Asia, sparked by the desire for liberation from Western colonial
+						powers, unfolded through distinct historical trajectories. In the Philippines, figures like 
+						Jose Rizal and Andres Bonifacio led movements against foreign colonization. Burma witnessed 
+						nationalism driven by the middle class, Buddhist clergy, and students, advocating against
+						British imperialism. Vietnam experienced a convergence of nationalist and communist ideologies
+						post-World War II. Indonesia's struggle against Dutch rule centered on educational empowerment,
+						notably championed by Raden Adjeng Kartini. In Thailand, Raja Mongkut's diplomatic efforts and 
+						modernization strategies paved the way for constitutional governance. These varied narratives
+						highlight the multifaceted nature of nationalist movements in the region</p>
+                    </td>
+                </tr>
+				<!-- Row 3 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1003</h4>
+                    </td>
+					<td class="text-center">Perkembangan idea Nasionalisme Di Asia Tenggara</td>
+                    <td>
+                        <p>Nationalism in Southeast Asia, sparked by the desire for liberation from Western colonial
+						powers, unfolded through distinct historical trajectories. In the Philippines, figures like 
+						Jose Rizal and Andres Bonifacio led movements against foreign colonization. Burma witnessed 
+						nationalism driven by the middle class, Buddhist clergy, and students, advocating against
+						British imperialism. Vietnam experienced a convergence of nationalist and communist ideologies
+						post-World War II. Indonesia's struggle against Dutch rule centered on educational empowerment,
+						notably championed by Raden Adjeng Kartini. In Thailand, Raja Mongkut's diplomatic efforts and 
+						modernization strategies paved the way for constitutional governance. These varied narratives
+						highlight the multifaceted nature of nationalist movements in the region</p>
+                    </td>
+                </tr>
+				<!-- Row 4 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1004</h4>
+                    </td>
+					 <td class="text-center">Perkembangan idea Nasionalisme di Barat</td>
+                    <td>
+                        <p>The development of nationalist ideas in the West emerged in response to opposition against 
+						monarchical rule and the perceived infringement on the rights and freedoms of the people. 
+						Highlighted by events such as the Glorious Revolution (1688) in England, the revolution aimed 
+						to establish parliamentary sovereignty and constitutional monarchy. The Bill of Rights was
+						enacted, granting Parliament the authority to legislate and levy taxes. Influential thinkers 
+						like John Locke rejected absolute monarchy, emphasizing the government's need for the consent 
+						of the people. The American Revolution (1776) and the French Revolution (1789) further 
+						championed these ideals of freedom, equality, and fraternity, reshaping the political
+						landscape in the West.</p>
+                    </td>
+                </tr>
+				<!-- Row 5 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1005</h4>
+                    </td>
+					<td class="text-center">Kesedaran Nationalisme Di Negara Kita</td>
+                    <td>
+                        <p>The awareness of nationalism in our country surged during the threats posed by 
+						Siam and the British, galvanized by local freedom fighters. In the era of the Malay 
+						Sultanate of Melaka, Sultan Mahmud Shah launched three unsuccessful attacks against
+						the Portuguese. Sultan Abdullah Mukarram Shah of Kedah resisted external threats, 
+						particularly from the English East India Company (SHTI), in an effort to reclaim Penang. 
+						Local figures like Penghulu Dol Said, Dato' Maharaja Lela Pandak Lam, Dato' Bahaman,
+						Rentap, Mat Salleh, Tok Janggut, and Haji Ahmad Limbong, demonstrated localized resistance, 
+						eliciting a stern response from colonizers and prompting grassroots movements.
+						The Islah movement, led by Sheikh Muhammad Tahir Jalaluddin, Haji Abbas Mohd Taha,
+						and Syed Sheikh al-Hadi, utilized newspaper writings by figures like Zainal Abidin Ahmad 
+						(Za’ba), Muhammad Rakawi Yusuf, Abdul Rahim Kajai, Hajah Zainon Munshi Sulaiman (Ibu Zain),
+						and Fatimah Yaakub. Additionally, socio-economic organizations, influenced by English and 
+						Malay-educated individuals such as Ibrahim Haji Yaakob, Ishak Haji Muhammad, Ahmad Boestanam,
+						and Burhanuddin al-Helmi, played a crucial role in fostering nationalism.</p>
+                    </td>
+                </tr>
+				<!-- Row 6 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1006</h4>
+                    </td>
+					<td class="text-center">Faktor Kemunculan Gerakan Nasionalisme</td>
+                    <td>
+                        <p>The nationalism movement in our country was spurred by various factors. The Islah 
+						movement played a key role in fostering unity and nationalism through religious channels.
+						Creative writing, exemplified by works like "Melor Kuala Lumpur" and "Cerita Awang Putat,"
+						served as a powerful medium to express the people's struggles against colonial powers. Print
+						media, including newspapers and magazines like Jawi Peranakan and Fajar Sarawak, played a
+						crucial role in spreading information. The establishment of madrasahs, such as Madrasah 
+						al-Attas and Madrasah al-Masyhur, and the influence of intellectuals from Middle Eastern
+						institutions and those educated in English and Malay contributed significantly to nationalist
+						ideas. External influences, including Pan-Islamism, the Japanese victory over Russia, 
+						the Chinese Revolution, and the struggles led by figures like Mahatma Gandhi, Jose Rizal, 
+						and Soekarno, further inspired resistance against colonial rule in our country</p>
+                    </td>
+                </tr>
+				<!-- Row 7 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1007</h4>
+                    </td>
+					<td class="text-center">Perkembangan Nationalisme</td>
+                    <td>
+                        <p>The development of nationalism in the country unfolded through three main aspects. 
+						Led by intellectuals, the movement gained momentum through creative writing, including
+						novels, short stories, and poetry that highlighted the struggles of the people. Print media,
+						such as newspapers and magazines, played a pivotal role in disseminating nationalist ideas,
+						while the establishment of educational institutions, like madrasahs, contributed to the spread
+						of these ideas. The efforts of intellectuals, whether educated in religion, English, or Malay,
+						were instrumental in shaping the nationalist narrative. The movement also found expression
+						through various associations and unions, such as the Kesatuan Melayu Singapura (KMS), 
+						Persaudaraan Sahabat Pena (PASPAM), Kesatuan Melayu Muda, and associations representing
+						the Chinese and Indian communities. These organizations championed the political, social,
+						and educational interests of their respective communities, contributing significantly to
+						the overall nationalist struggle against colonial rule.</p>
+                    </td>
+                </tr>
+				<!-- Row 8 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1008</h4>
+                    </td>
+					 <td class="text-center">Kesan Perkembangan Nasionalisme</td>
+                    <td>
+                        <p>Nationalist development had significant impacts across politics, economics, and society. 
+						Politically, it led to increased Malay representation in the Malayan Civil Service, 
+						decentralization policies, and united political expressions. In the Chinese community, it 
+						fostered unity and awareness through reading clubs and Mandarin schools. Economically,
+						Malay initiatives stimulated entrepreneurship, exemplified by the al-Jamiah al-Khairiah 
+						association. Socially, it prompted the formation of welfare associations in the Indian and
+						Ceylonese communities and elevated female involvement in education. Notable individuals, 
+						like E.E.C. Thuraisingham, played crucial roles in uplifting industries. The Chinese
+						community sought British consideration, and Tan Cheng Lock advocated for welfare and 
+						education funds in the Straits Settlements Legislative Council.</p>
+                    </td>
+                </tr>
+				<!-- Row 9 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1009</h4>
+                    </td>
+					<td class="text-center">Perkembangan Idea Nasionalisme</td>
+                    <td>
+                        <p>Nationalism in the region evolved through three main aspects: the leadership of
+						intellectual groups, the dissemination of ideals through various mediums, and the
+						establishment of organizations and associations. Intellectuals, whether religious, 
+						English-educated, or Malay-educated, played a pivotal role in shaping nationalist sentiments,
+						spreading their ideas through newspapers, magazines, novels, and poetry. Organizations like 
+						Kesatuan Melayu Singapura (KMS), Persaudaraan Sahabat Pena (PASPAM), and Kesatuan Melayu Muda
+						spearheaded political and educational initiatives. Simultaneously, the Chinese and Indian
+						communities actively contributed to nationalist endeavors through reading clubs, newspapers, 
+						creative works, and various associations, adding diversity to the nationalist landscape in 
+						the region.</p>
+                    </td>
+                </tr>
+				<!-- Row 10 -->
+                <tr>
+                    <td class="text-center">
+                        
+                        <h4>1010</h4>
+                    </td>
+					 <td class="text-center">Tokoh Nasionalisme</td>
+                    <td>
+                        <p>Tokoh nasionalisme di Malaysia melibatkan individu yang berperan penting dalam 
+						memimpin dan menggerakkan gerakan kebangsaan untuk mencapai kemerdekaan dan pembentukan 
+						negara Malaysia. Salah satu tokoh nasionalisme yang paling dihormati adalah
+						Tunku Abdul Rahman, yang dikenal sebagai "Bapa Kemerdekaan Malaysia." Beliau memainkan
+						peranan utama dalam perundingan yang membawa kepada kemerdekaan Malaysia pada tahun 1957. 
+						Tokoh lain yang signifikan adalah Tun Dr. Mahathir Mohamad, yang menjadi Perdana Menteri 
+						Malaysia untuk tempoh yang panjang dan memainkan peranan penting dalam pembangunan ekonomi
+						dan politik negara. Gerakan-gerakan kebangsaan di Malaysia juga dipengaruhi oleh tokoh-tokoh
+						seperti Datuk Onn Jaafar, yang memimpin Parti Perikatan dan turut berjuang untuk meraih 
+						kemerdekaan. Kesemua tokoh ini membentuk sejarah nasionalisme Malaysia, memimpin negara
+						menuju kedaulatan dan pembangunan.</p>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <!-- Features End -->
+	
+
+
+<script>
+    function searchTable() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("topicTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0]; // Column index 0 (Topic_ID)
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+	
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Bangkit Nation</h1>
+                    </a>
+                    <p class="mt-3 mb-4"> A Educational Repository created for ICM 561
+                    Made By Fazlin Maisarah & Aliya Amani </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <!-- Remove Get In Touch Section -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-end">
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Bangkit Nation</a>. All Rights Reserved. 
+                    Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

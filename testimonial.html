@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+     <div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Bangkit Nation</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <div class="navbar-nav py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <!-- Your dropdown menu content here -->
+                    <div class="dropdown-menu m-0">
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item active">Topic Repository</a>
+                        <a href="feature.html" class="dropdown-item">Topic Description</a>
+                        <a href="team.html" class="dropdown-item">Figure</a>
+                        <a href="testimonial.html" class="dropdown-item">HTTRACK</a>
+                        <a href="quote.html" class="dropdown-item">Conifer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">HTTRACK</h1>
+                <a href="" class="h5 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h5 text-white">HTTRACK</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+<!-- HTTRACK Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">HTTRACK</h5>
+            <h1 class="mb-0">TABLE OF HTTRACK FOR KEBANGKITAN NASIONALISME</h1>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="mb-3">
+            
+            <input type="text" class="form-control" id="searchInput" oninput="searchTable()" placeholder="Search">
+        </div>
+        
+        <table class="table table-bordered" id="topicTable">
+            <thead>
+                <tr>
+                    <th class="text-center">Topic ID</th>
+                    <th class="text-center">Website Name</th>
+                    <th class="text-center">Archives Success</th>
+                    <th class="text-center">Duration</th>
+                    <th class="text-center">Size Of File</th>
+                    <th class="text-center">No of file</th>
+                    <th class="text-center">HTTRACK Google Drive Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td class="text-center">1001</td>
+                    <td class="text-center">https://www.weacademia.com/my/sejarah/tingkatan-4/sejarah-t4-bab-2/sejarah-t4-bab-2-1</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">7 seconds</td>
+                    <td class="text-center">921149 bytes</td>
+                    <td class="text-center">13</td>
+                    <td class="text-center"><a href=https://drive.google.com/drive/folders/1HLtHBY5Q9qj1s0bOpAmTZ2zQQiqhc8Gr?usp=sharing target="_blank">View</a></td>
+                </tr>
+                 <!-- Row 2 -->
+                <tr>
+                    <td class="text-center">1002</td>
+                    <td class="text-center">https://anyflip.com/iqnoa/xmcb/basic</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">33 Seconds</td>
+                    <td class="text-center">1445624 bytes</td>
+                    <td class="text-center">31</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1Tjz7Ywa_9b4iu1yufYpJL3N-PALl-a-o?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 3 -->
+                <tr>
+                    <td class="text-center">1003</td>
+                    <td class="text-center">https://cikguizatulhanim.blogspot.com/2015/10/faktor-kebangkitan-nasionalisme.html</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">2 Minutes 2 seconds</td>
+                    <td class="text-center">1818327 bytes</td>
+                    <td class="text-center">116</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1fFVgYM1-bnKQTXLamdcFfckPkxTu6HDc?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 4 -->
+                <tr>
+                    <td class="text-center">1004</td>
+                    <td class="text-center">https://juhaimimajid.blogspot.com/2017/09/faktor-kemunculan-gerakan-nasionalisme.html</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">2 minutes 13 seconds</td>
+                    <td class="text-center">5141897 bytes</td>
+                    <td class="text-center">65</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1S9pTSU_EzxuCnt7SwXeE0sw1ekTCkL__?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 5 -->
+                <tr>
+                    <td class="text-center">1005</td>
+                    <td class="text-center">https://www.ipendidikan.my/buku-teks-sejarah-tingkatan-4.html</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">30 minutes</td>
+                    <td class="text-center">7168541 bytes</td>
+                    <td class="text-center">211</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/12jlsyHx6rchm5t1Xk3P5J1x_hABcbzAG?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 6 -->
+                <tr>
+                    <td class="text-center">1006</td>
+                    <td class="text-center">.https://www.weacademia.com/my/sejarah/tingkatan-4/sejarah-t4-bab-2/sejarah-t4-bab-2-5</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">13 seconds</td>
+                    <td class="text-center">1896363 bytes</td>
+                    <td class="text-center">13</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1GLv0MWdlpItmD_ok364m9UmyZeLj-cUf?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 7 -->
+                <tr>
+                    <td class="text-center">1007</td>
+                    <td class="text-center">https://malaysiapost.com.my/2020/10/22/siri-2-sejarah-tingkatan-4-agungkan-golongan-radikal-haluan-kiri/</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">200 Seconds</td>
+                    <td class="text-center">1452082bytes</td>
+                    <td class="text-center">35</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1l4UBq8x_cdqrrke70ietMLDAp-8_Ps22?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 8 -->
+                <tr>
+                    <td class="text-center">1008</td>
+                    <td class="text-center">https://cikgusyahir.com/kebangkitan-nasionalisme/</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">1 minute 38 seconds</td>
+                    <td class="text-center">3144695bytes</td>
+                    <td class="text-center">337</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1K3Dx7NLiQ7ncvBiCEgLWNSovXTDC_gSi?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 9 -->
+                <tr>
+                    <td class="text-center">1009</td>
+                    <td class="text-center">https://cerdika.com/my/faktor-kemunculan-gerakan-nasionalisme/#google_vignette</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">18 seconds</td>
+                    <td class="text-center">656502 bytes</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/11zk6TI2xGSsysnvnCe4Z87dHWWD3PRUF?usp=sharing" target="_blank">View </a></td>
+                </tr>
+				 <!-- Row 10 -->
+                <tr>
+                    <td class="text-center">1010</td>
+                    <td class="text-center">https://infopelajar.my/nota-sejarah-tingkatan-4/</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">8 seconds</td>
+                    <td class="text-center">1001869 bytes</td>
+                    <td class="text-center">21</td>
+                    <td class="text-center"><a href="https://drive.google.com/drive/folders/1XS3xzaJ2kDateuHLVy81nq3dBqDnt2f9?usp=sharing" target="_blank">View </a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- HTTRACK End -->
+
+<script>
+    function searchTable() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("topicTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            var found = false; // Flag to check if any column matches the search query
+
+            // Loop through all columns (Topic_ID, Topic Name)
+            for (var j = 0; j < 2; j++) {
+                td = tr[i].getElementsByTagName("td")[j];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        found = true;
+                        break; // Break the loop if a match is found in any column
+                    }
+                }
+            }
+
+            // Show or hide the row based on whether a match was found
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Bangkit Nation</h1>
+                    </a>
+                    <p class="mt-3 mb-4"> A Educational Repository created for ICM 561
+                    Made By Fazlin Maisarah & Aliya Amani </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <!-- Remove Get In Touch Section -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-end">
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Bangkit Nation</a>. All Rights Reserved. 
+                    Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
